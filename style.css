@@ -1,0 +1,132 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+section {
+  width: 60vw;
+  margin: 50px auto;
+}
+
+section.full-page {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4em;
+}
+header > div#links {
+  margin-left: auto;
+  margin-right: 10vw;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 20vw;
+  max-width: 350px;
+  min-width: 225px;
+}
+header > div#links > a {
+  color: white;
+  line-height: 16vh;
+  color: white;
+  text-decoration: none;
+}
+header > div#logo-container {
+  display: inline-flex;
+  margin-left: 10vw;
+  align-self: flex-start;
+
+}
+header > div#logo-container > a {
+  color: white;
+  line-height: 16vh;
+  text-decoration: none;
+}
+
+.outer-div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 80vh;
+     width: 100vw;
+}
+.inner-div {
+     border-radius: 3px;
+
+}
+
+h1.landing-title {
+  font-size: 15em;
+  color: white;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+span#demo-foreword {
+  color: white;
+  font-size: 1.6em;
+  font-weight: 300;
+  padding: 0 0 5vh;
+  text-align: center;
+  display: block;
+}
+
+span.typer {
+  display: inline-block;
+}
+
+div#scroll-down-cont {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 50px;
+}
+
+section.accent {
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1em;
+  width: 60vw;
+}
+
+td.key {
+  text-align: left;
+}
+td.one, th.one, td.two, th.two {
+  text-align: left;
+  padding: 10px;
+}
+
+div.how-to {
+  display: inline-flex;
+  flex-basis: 0;
+}
+
+div.how-to div {
+  width: 18vw;
+  padding: 0 1vw;
+}
+
+div.how-to p {
+  text-align: justify;
+}
+
+div.how-to div:first-child {
+  padding: 0 1vw 0 0;
+}
+
+div.how-to div:last-child {
+  padding: 0 0 0 1vw;
+}

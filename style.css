@@ -4,40 +4,74 @@ body {
   font-family: 'Catamaran', sans-serif;
 }
 
-section {
+a {
+  color: #6694e2;
+}
+
+section, footer {
   width: 60vw;
   margin: 50px auto;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: right;
 }
 
 section.full-page {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background: #4568DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+section.dark, footer.dark {
+  background: #1E2835;
+  color: white;
+  width: 100vw;
+  padding: 2vh 0;
+}
+
+footer.dark {
+  padding: 20px 0;
+}
+
+section.colorful {
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  width: 100vw;
+  padding: 2vh 0;
+  margin: 0 auto;
+}
+
+section.colorful a {
+  color: #f3ebd9;
+}
+
+div.dark-inner {
+  width: 60vw;
+  margin: 50px auto;
+}
+
+footer > div.dark-inner {
+  margin: 0px auto;
 }
 
 header {
   height: 10vh;
-  display: flex;
-  flex-direction: row;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 header > div#links {
-  margin-left: auto;
-  margin-right: 10vw;
-  display: inline-flex;
-  justify-content: space-between;
-  width: 20vw;
-  max-width: 350px;
-  min-width: 225px;
+  position: absolute;
+  right: 5vw;
 }
 header > div#links > a {
-  color: white;
   line-height: 16vh;
   color: white;
   text-decoration: none;
+  padding: 2vw;
 }
 header > div#logo-container {
   display: inline-flex;
@@ -64,11 +98,12 @@ header > div#logo-container > a {
 }
 
 h1.landing-title {
-  font-size: 15em;
+  font-size: 10em;
   color: white;
   font-weight: 300;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 span#demo-foreword {
@@ -78,6 +113,7 @@ span#demo-foreword {
   padding: 0 0 5vh;
   text-align: center;
   display: block;
+  min-width: 100vw;
 }
 
 span.typer {
@@ -91,9 +127,6 @@ div#scroll-down-cont {
   width: 50px;
 }
 
-section.accent {
-}
-
 table {
   margin: 0 auto;
   border-collapse: collapse;
@@ -102,11 +135,29 @@ table {
 }
 
 td.key {
-  text-align: left;
+  text-align: right;
+  border-right: 1px solid #282828;
+  padding: 0 3% 0 0;
+  width: 25%;
+  font-weight: bold;
 }
+
+th {
+  font-style: normal !important;
+}
+
 td.one, th.one, td.two, th.two {
-  text-align: left;
+  text-align: center;
   padding: 10px;
+}
+
+td.two {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+td {
+
 }
 
 div.how-to {
@@ -119,8 +170,11 @@ div.how-to div {
   padding: 0 1vw;
 }
 
+div.how-to h3 {
+  text-align: center;
+}
+
 div.how-to p {
-  text-align: justify;
 }
 
 div.how-to div:first-child {

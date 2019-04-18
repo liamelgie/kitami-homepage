@@ -59,6 +59,11 @@ footer > div.dark-inner {
   margin: 0px auto;
 }
 
+footer {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
 header {
   height: 10vh;
   font-size: 1.3em;
